@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  height: 700px;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 575px) {
+    gap: 46px;
+  }
+  .subtitle {
+    p {
+      text-align: center;
+      color: var(--tertiary);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 129.9%;
+      letter-spacing: 0.2px;
+    }
+  }
+  .title {
+    p {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 600;
+      @media (max-width: 575px) {
+        font-size: 24px;
+      }
+    }
+  }
+  .button {
+    button {
+      background-color: var(--tertiary);
+      width: 280px;
+      font-size: 20px;
+    }
+  }
+}

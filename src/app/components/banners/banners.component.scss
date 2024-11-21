@@ -1,0 +1,93 @@
+section {
+  background: #dbd9d4;
+  @media (min-width: 991px) {
+    background: linear-gradient(180deg, #dbd9d4 0%, #dbd9d4 80%, transparent 80%, transparent 100%);
+  }
+  .content {
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 18px;
+    border: 1px solid #fff;
+    // background-image: url("/assets/images/about-us/banner-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 46px 22px 350px 22px;
+    @media (min-width: 768px) {
+      padding: 90px 22px 400px 22px;
+    }
+    @media (min-width: 991px) {
+      padding: 130px 0px 167px 48px;
+      // background-image: url("/assets/images/about-us/banner-desk.webp");
+    }
+    &.about {
+      background-image: url("/assets/images/about-us/banner-mobile.webp");
+      @media (min-width: 991px) {
+        padding: 130px 0px 167px 48px;
+        background-image: url("/assets/images/about-us/banner-desk.webp");
+      }
+    }
+    &.investment {
+      background-image: url("/assets/images/investment/banner-mobile.webp");
+      @media (min-width: 991px) {
+        padding: 130px 0px 167px 48px;
+        background-image: url("/assets/images/investment/banner-desk.webp");
+      }
+    }
+    &.contact {
+      background-image: url("/assets/images/contact/banner-mobile.webp");
+      @media (min-width: 991px) {
+        padding: 130px 0px 167px 48px;
+        background-image: url("/assets/images/contact/banner-desk.webp");
+      }
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      @media (min-width: 991px) {
+        max-width: 454px;
+      }
+      .title {
+        p {
+          color: var(--secondary);
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 110%;
+          @media (min-width: 768px) {
+            font-size: 42px;
+          }
+        }
+      }
+      .info {
+        p {
+          color: #3d3d3d;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 124.5%; /* 22.41px */
+          letter-spacing: -0.18px;
+        }
+        &.about{
+          p{
+            font-size: 22px;
+            font-family: 'Nunito';
+            font-weight: 600;
+          }
+        }
+      }
+      .button {
+        padding-top: 8px;
+        button {
+          padding: 16px 24px;
+        }
+      }
+    }
+  }
+}
+
+.space {
+  height: 100px;
+}

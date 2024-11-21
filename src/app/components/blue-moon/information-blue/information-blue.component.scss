@@ -1,0 +1,259 @@
+.one {
+  padding: 130px 0px 130px 0px;
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    .info {
+      p {
+        color: #72644a;
+        text-align: center;
+        font-family: "Mazius";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 184%;
+        text-transform: uppercase;
+        @media (min-width: 575px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .button {
+      width: 100%;
+      max-width: 729px;
+      margin: 0 auto;
+      height: 80px;
+      button {
+        height: 100%;
+        white-space: wrap !important;
+        border-radius: 0px !important;
+        color: #fff;
+        font-family: "Mazius";
+        font-weight: 400;
+        line-height: 105%;
+        letter-spacing: 3.22px;
+        text-transform: uppercase;
+        width: 100%;
+        background: #9a8b6e;
+        font-size: 16px;
+        font-family: "Mazius" !important;
+        padding: 16px 32px;
+        min-height: 49px;
+        @media (min-width: 768px) {
+          height: 96px;
+          padding: 32px;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.two {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @media (min-width: 991px) {
+      gap: 90px;
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 32px;
+      @media (min-width: 991px) {
+        flex-direction: row;
+        gap: 80px;
+      }
+      @media (min-width: 1200px) {
+        gap: 181px;
+      }
+      .column {
+        width: 100%;
+        text-align: center;
+        @media (min-width: 991px) {
+          max-width: 594px;
+          text-align: start;
+        }
+        p {
+          width: 100%;
+          color: #72644a;
+          font-family: "Mazius";
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 136%;
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
+        }
+      }
+      .column-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        @media (min-width: 991px) {
+          gap: 24px;
+          max-width: 537px;
+        }
+        p {
+          color: #5a5a5a;
+          font-family: 'Inter';
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: 0.36px;
+          text-align: center;
+          @media (min-width: 575px) {
+            text-align: justify;
+          }
+        }
+        button {
+          width: 100%;
+          height: 38px;
+          padding: 10px 32px;
+          font-size: 14px;
+          @media (min-width: 575px) {
+            font-size: 16px;
+            width: fit-content;
+          }
+        }
+      }
+    }
+    .image {
+      width: 100%;
+      height: 542px;
+      @media (min-width: 575px) {
+        height: 416px;
+      }
+      .desk {
+        display: none;
+        @media (min-width: 575px) {
+          display: block;
+        }
+      }
+      .mobile {
+        display: block;
+        @media (min-width: 575px) {
+          display: none;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 60% 50%;
+      }
+    }
+  }
+}
+
+.three {
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 108px;
+    @media (min-width: 992px) {
+      gap: 50px;
+      flex-direction: row;
+    }
+    @media (min-width: 1200px) {
+      gap: 200px;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 51px;
+      @media (min-width: 992px) {
+        gap: 36px;
+        max-width: 613px;
+      }
+      .info {
+        p {
+          color: #72644a;
+          font-family: "Mazius";
+          font-size: 28px;
+          font-weight: 400;
+          text-align: center;
+          @media (min-width: 575px) {
+            font-size: 32px;
+            text-align: start;
+          }
+        }
+      }
+      .sub {
+        display: flex;
+        flex-direction: column;
+        gap: 54px;
+        @media (min-width: 991px) {
+          gap: 51px;
+        }
+        p {
+          color: #5a5a5a;
+          font-family: 'Inter';
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          text-align: center;
+          @media (min-width: 575px) {
+            text-align: start;
+          }
+        }
+        .button {
+          button {
+            height: 53px;
+            padding: 10px 32px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 129.9%;
+            letter-spacing: 0.96px;
+            text-transform: uppercase;
+            width: 100%;
+            @media (min-width: 575px) {
+              width: fit-content;
+            }
+          }
+        }
+      }
+    }
+    .images {
+      margin: 0px 15px 18px 0px;
+      max-width: 100%;
+      .image {
+        max-width: 100%;
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+        img {
+          position: inherit;
+          z-index: 1;
+          max-width: 100%;
+          width: 330px;
+          @media (min-width: 575px) {
+            min-width: 385px;
+          }
+        }
+        .back {
+          z-index: 0;
+          bottom: -18px;
+          right: -15px;
+          position: absolute;
+          width: 293px;
+          height: 293px;
+          background: #9a8b6e;
+          @media (min-width: 575px) {
+            width: 342px;
+            height: 342px;
+          }
+        }
+      }
+    }
+  }
+}

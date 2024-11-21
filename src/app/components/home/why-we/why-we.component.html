@@ -1,0 +1,36 @@
+<section class="m-section">
+  <div class="container">
+    <div class="content">
+      <div class="information">
+        <div class="title">
+          <div class="subtitle">
+            <p>Porque Nosotros</p>
+          </div>
+          <p class="title-section">Confianza en Cada Aspecto </p>
+        </div>
+        <div class="texto">
+          <p class="text">Descubre nuestros pilares fundamentales para una experiencia residencial confiable y
+            satisfactoria</p>
+        </div>
+        <div class="button">
+          <button mat-button routerLink="/contacto" (click)="goTo('nav', $event)" class="btn-primary">Contacta un Asesor</button>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card" *ngFor="let info of infocards">
+          <div class="top">
+            <div class="image">
+              <img [src]="info.image" alt="">
+            </div>
+            <div class="title-card">
+              <p>{{info.title}}</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <p class="text">{{info.info}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

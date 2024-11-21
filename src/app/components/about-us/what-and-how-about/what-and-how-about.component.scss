@@ -1,0 +1,123 @@
+.first {
+  background: linear-gradient(0deg, #eaebee 0%, rgba(248, 249, 251, 0) 63%);
+}
+.content {
+  .title {
+    text-align: center;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding-top: 125px;
+    gap: 38px;
+    @media (min-width: 991px) {
+      padding-top: 0px;
+      gap: 42px;
+      grid-template-columns: repeat(3, auto);
+    }
+    .card {
+      width: 100%;
+      border-radius: 18px;
+      background: #dcdcdc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (min-width: 991px) {
+        max-width: 371px;
+      }
+      .top {
+        display: flex;
+        flex-direction: column;
+        padding: 39px 30px;
+        gap: 39px;
+        @media (min-width: 991px) {
+          gap: 42px;
+          padding: 42px 32px;
+        }
+        .name {
+          p {
+            color: #4c514f;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100.687%;
+          }
+        }
+        .info {
+          p {
+            color: #4c514f;
+            font-family: "Nunito";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 156.9%;
+          }
+        }
+      }
+      .image {
+        margin-bottom: -4px;
+        img {
+          border-radius: 0px 0px 18px 18px;
+          width: 100%;
+          object-fit: cover;
+          @media (min-width: 991px) {
+            max-height: 157px;
+          }
+          @media (min-width: 1200px) {
+            max-height: 193px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.second-content {
+  padding-bottom: 80px;
+  @media (min-width:575px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 955px;
+  margin: 0 auto;
+  .title {
+    text-align: center;
+    p {
+      color: var(--secondary);
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%;
+      font-size: 18px;
+      @media (min-width:768px) {
+        font-size: 24px;
+        line-height: 180%;
+      }
+    }
+  }
+  .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+      font-size: 16px;
+      width: 100%;
+      @media (min-width:575px) {
+        width: fit-content;
+      }
+    }
+  }
+}

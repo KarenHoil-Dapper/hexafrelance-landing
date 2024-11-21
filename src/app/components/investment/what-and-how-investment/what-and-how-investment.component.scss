@@ -1,0 +1,86 @@
+section {
+  background: linear-gradient(0deg, #eaebee 0%, rgba(248, 249, 251, 0) 63%);
+  .container {
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+      padding-bottom: 50px;
+      .title {
+        max-width: 363px;
+        height: 137px;
+        p {
+          color: var(--secondary);
+          line-height: 124.187%;
+        }
+      }
+      .swiper {
+        max-width: 100%;
+        .content-swiper {
+          max-height: 448px;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 364px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          padding: 32px 24px;
+          border-radius: 24px;
+          padding-bottom: 250px;
+          &.turismo{
+            background: linear-gradient(to top, rgba(32, 119, 110, 0) 70%, rgba(32, 119, 110, 1) 100%),
+            url("/assets/images/about-us/turismo.webp");
+            background-size: 100% 225px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #20776e;
+          }
+          &.ubicacion{
+            background: linear-gradient(to top, rgba(32, 119, 110, 0) 70%, rgba(32, 119, 110, 1) 100%),
+            url("/assets/images/about-us/ubi.webp");
+            background-size: 101% 225px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #20776e;
+          }
+          &.preventa{
+            background: linear-gradient(to top, rgba(32, 119, 110, 0) 70%, rgba(32, 119, 110, 1) 100%),
+            url("/assets/images/about-us/prev.webp");
+            background-size: 101% 225px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #20776e;
+          }
+          &.desarrollo{
+            background: linear-gradient(to top, rgba(32, 119, 110, 0) 70%, rgba(32, 119, 110, 1) 100%),
+            url("/assets/images/about-us/desar.webp");
+            background-size: 101% 225px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-color: #20776e;
+          }
+
+          .title-swiper {
+            p {
+              color: #fff;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+          }
+          .info {
+            p {
+              color: #fff;
+              font-family: "Nunito";
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 136.687%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

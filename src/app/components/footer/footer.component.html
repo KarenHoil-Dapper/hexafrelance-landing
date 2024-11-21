@@ -1,0 +1,47 @@
+<section class="m-section" [ngClass]="{'blue-moon': isPageBlueMoon}">
+  <div class="container">
+    <div class="content" [ngClass]="{'blue-moon': isPageBlueMoon}">
+      <div class="top">
+        <div class="logo">
+          <a *ngIf="!isPageBlueMoon" routerLink="/inicio" (click)="goTo('nav', $event)"><img
+              src="/assets/images/logos.png" alt=""></a>
+        </div>
+        <div class="links">
+          <a *ngFor="let route of routers" href="javascript:void(0)" (click)="goTo('nav', $event)"
+            routerLink="{{route.route}}" routerLinkActive="active">{{route.name}}
+          </a>
+        </div>
+      </div>
+      <div class="info-contact">
+        <a href="tel: +529984270404">Tel. +52 998 427 0404 </a>
+        <a href="https://wa.me/+529983295355" target="_blank">WhatsApp +52 998 329 5355</a>
+        <a class="email" href="mailto: contacto@cccgroup.mx">contacto@cccgroup.mx</a>
+      </div>
+      <div class="bottom">
+        <div class="address">
+          <p class="text">Master Plaza local 57-A, Planta alta, Supermanzana 327 Manzana 38 Lote 57-01, Cancún, México.
+          </p>
+        </div>
+        <div class="social">
+          <p>Síguenos</p>
+          <div class="redes" *ngIf="!isPageBlueMoon">
+            <a target="_blank" href="https://www.instagram.com/cccgroupinco/"><img
+                src="/assets/images/icons/instagram.png" alt=""></a>
+            <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/twitter.png" alt=""></a> -->
+            <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/youtube.png" alt=""></a> -->
+            <a target="_blank" href="https://www.facebook.com/lunaazulresidencial"><img
+                src="/assets/images/icons/facebook.png" alt=""></a>
+          </div>
+          <div class="redes" *ngIf="isPageBlueMoon">
+            <a target="_blank" href="https://www.instagram.com/cccgroupinco/"><img
+                src="/assets/images/icons/instagram-white.png" alt=""></a>
+            <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/twitter-white.png" alt=""></a> -->
+            <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/youtube-white.png" alt=""></a> -->
+            <a target="_blank" href="https://www.facebook.com/lunaazulresidencial"><img
+                src="/assets/images/icons/facebook-white.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

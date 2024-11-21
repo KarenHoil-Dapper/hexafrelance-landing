@@ -1,0 +1,122 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 52px;
+  @media (min-width: 1200px) {
+    gap: 65px;
+    flex-direction: row;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    @media (min-width: 1200px) {
+      max-width: 427px;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+      .subtitle {
+        p {
+          color: var(--secondary);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 129.9%; /* 20.784px */
+          letter-spacing: 0.16px;
+        }
+      }
+      .title-section {
+        color: var(--secondary);
+        @media (min-width: 991px) {
+          font-size: 40px;
+        }
+      }
+    }
+    .texto {
+      p {
+        color: #3f3f3e;
+        font-family: "Nunito";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 122.4%;
+      }
+    }
+    .button {
+      button {
+        background-color: var(--tertiary);
+      }
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    gap: 44px;
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, auto);
+    }
+    .card {
+      width: 100%;
+      border-radius: 24px;
+      border: 2px solid #20776e;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      transition: all 0.5s ease-in-out;
+      justify-content: space-between;
+      background: transparent;
+      @media (min-width: 1200px) {
+        max-width: 344px;
+      }
+      padding: 24px;
+      &:hover {
+        background: linear-gradient(180deg, #20776e 6.61%, #34948a 122.22%);
+        // background-color: var(--primary);
+        .top {
+          .title-card {
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+        .info-card {
+          p {
+            color: white;
+          }
+        }
+      }
+      .top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        .image {
+          img {
+            min-width: 51px;
+          }
+        }
+        .title-card {
+          p {
+            color: var(--primary);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+      .info-card {
+        p {
+          line-height: 136.687%;
+          color: #6a6a6a;
+          font-family: "Nunito";
+        }
+      }
+    }
+  }
+}

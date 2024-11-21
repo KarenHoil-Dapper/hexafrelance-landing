@@ -1,0 +1,36 @@
+.whats-icon {
+  padding: 10px;
+  background-color: #48c857;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 20;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  width: fit-content;
+  max-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  box-shadow: 0px 4px 10px 0px rgba(86, 86, 86, 0.25);
+  border: 2px solid #fff;
+  p {
+    font-size: 16px;
+  }
+
+  #whats-new {
+    width: 32px;
+    height: 32px;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,249 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 66px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 50px;
+  }
+  @media (min-width: 991px) {
+    gap: 127px;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 454px;
+    .subtitle {
+      p {
+        color: var(--secondary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 129.9%; /* 20.784px */
+        letter-spacing: 0.16px;
+      }
+    }
+    .title {
+      p {
+        color: var(--secondary);
+        font-style: normal;
+        font-weight: 600;
+        line-height: 101.687%;
+        font-size: 48px;
+        @media (min-width: 768px) {
+          font-size: 56px;
+        }
+      }
+    }
+    .info {
+      p {
+        color: #6a6a6a;
+        font-family: "DM Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 134.5%;
+      }
+    }
+
+    &.blue-moon {
+      .subtitle {
+        p {
+          color: #b5a887;
+          // font-family: Inter;
+        }
+      }
+      .title {
+        p {
+          color: #9a8b6e;
+          font-family: "Mazius";
+          font-size: 40px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+      .info{
+        p{
+          font-family: 'Inter';
+        }
+      }
+    }
+  }
+  .form {
+    width: 100%;
+    max-width: 537px;
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        .form-field {
+          position: relative;
+          .form-error {
+            color: #d60000;
+            font-size: 12px;
+            position: absolute;
+            top: 58px;
+          }
+          input,
+          textarea {
+            font-size: 16px;
+            font-family: "Nunito";
+            width: 100%;
+            border: 0;
+            font-weight: normal;
+            padding: 10px 0px;
+            height: 56px;
+            outline: none;
+            border-radius: 0px;
+            background: transparent;
+            border-bottom: 1px solid #d0d0ce;
+            width: 100%;
+            line-height: 177.5%;
+          }
+          textarea {
+            padding: 10px 0px;
+            resize: none;
+            height: 144px;
+            line-height: 32px;
+          }
+        }
+      }
+      .button {
+        position: relative;
+        button {
+          width: 100%;
+          background-color: var(--tertiary);
+          @media (min-width: 575px) {
+            width: fit-content;
+          }
+        }
+        .error-captcha {
+          color: #d60000;
+          font-size: 12px;
+          position: absolute;
+          top: 59px;
+        }
+      }
+
+      &.blue-moon {
+        .button {
+          button {
+            padding: 16px 24px;
+            background: #9a8b6e;
+            border-radius: 0px;
+            color: #fff;
+            font-family: "Mazius";
+            font-size: 14px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.addres-info {
+  margin-top: 100px;
+  background-color: var(--tertiary);
+  position: relative;
+  &.blue-moon {
+    background-color: #748ea5;
+  }
+  .image {
+    position: absolute;
+    height: 95%;
+    bottom: 0;
+    img {
+      height: 100%;
+      object-position: right;
+      object-fit: cover;
+    }
+    @media (min-width: 575px) {
+      bottom: 0;
+    }
+  }
+  .content-address {
+    position: relative;
+    z-index: 1;
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: 43px;
+      justify-content: center;
+      @media (min-width: 991px) {
+        justify-content: end;
+      }
+      @media (min-width: 575px) {
+        padding: 140px 0px;
+        flex-direction: row;
+        align-items: center;
+      }
+      .left,
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        .column {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          .name {
+            p,
+            a {
+              color: #7addd2;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 129.9%; /* 20.784px */
+              letter-spacing: 0.16px;
+            }
+          }
+          .info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            p,
+            a {
+              color: #f8f9fb;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 110.687%;
+            }
+            a{
+              cursor: pointer;
+            }
+          }
+          .redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 17px;
+            img {
+              min-width: 24px;
+            }
+          }
+        }
+      }
+      .blue-moon {
+        .column {
+          .name {
+            p {
+              color: #e8dec5;
+            }
+          }
+        }
+      }
+      .right {
+        gap: 50px;
+      }
+    }
+  }
+}

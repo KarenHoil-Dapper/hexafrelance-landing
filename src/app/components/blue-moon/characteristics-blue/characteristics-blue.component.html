@@ -1,0 +1,40 @@
+<section class="m-section one" id="desarrollo">
+  <div class="container">
+    <div class="content">
+      <div class="cards">
+        <div class="card" *ngFor="let info of infoCards; let i = index" [ngClass]="{ 'reverse': i % 2 === 1 }">
+          <div class="image">
+            <img [src]="info.image" alt="">
+          </div>
+          <div class="information">
+            <div class="title">
+              <p>{{info.title}}</p>
+            </div>
+            <div class="info">
+              <p>{{info.info}}</p>
+            </div>
+            <div class="button">
+              <button (click)="goTo('contact', $event)" mat-button class="btn-blue">{{info.button}}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="m-section two">
+  <div class="container">
+    <div class="content">
+      <!-- <div class="info">
+        <p>A pocos minutos de nuestro desarrollo encontrarás una amplia gama de servicios como Grand Outlet Riviera Maya
+          la nueva plaza comercial más grande de Latinoamérica, el Aeropuerto Internacional de Cancún a 15 min y una
+          Estación del Tren Maya a 10 min. La playa más cercana está localizada a 20 minutos de Luna Azul Residencial.
+          Estarás cerca de todo lo que necesitas sin tener que alejarte demasiado.</p>
+      </div> -->
+      <div class="title">
+        <p>¡Te invitamos a visitarnos y descubrirlo por ti mismo!</p>
+      </div>
+    </div>
+  </div>
+</section>

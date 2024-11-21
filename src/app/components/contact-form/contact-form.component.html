@@ -1,0 +1,164 @@
+<section class="m-section" id="contact">
+  <div class="container">
+    <div class="content">
+      <div class="information" [ngClass]="{'blue-moon': isPageBlueMoon}">
+        <div class="subtitle">
+          <p>Contacto</p>
+        </div>
+        <div class="title">
+          <p class="title-banner">Conéctate con Nosotros</p>
+        </div>
+        <div class="info">
+          <p class="text">Estamos Aquí para Convertir tus Sueños Inmobiliarios en Realidad.</p>
+        </div>
+      </div>
+      <div class="form">
+        <form  [formGroup]="form"  action="javasccript:void(0)" (submit)="send()" (ngSubmit)="formValidation()" [ngClass]="{'blue-moon': isPageBlueMoon}">
+          <div class="inputs">
+            <div class="form-field"
+              [ngClass]="{'margin-error' : (form.get('from_name')?.errors && form.get('from_name')?.touched) || (invalid && form.get('from_name')?.untouched)}">
+              <input type="text" placeholder="Nombre" required (click)="resetValidations()" formControlName="from_name" />
+              <p class="form-error" [@enterAnimation]
+                *ngIf="(form.get('from_name')?.errors && form.get('from_name')?.touched) || (invalid && form.get('from_name')?.untouched)">
+                {{errorMessage('from_name')}}
+              </p>
+            </div>
+            <div class="form-field"
+              [ngClass]="{'margin-error' : (form.get('phone')?.errors && form.get('phone')?.touched) || (invalid && form.get('phone')?.untouched)}">
+              <div>
+                <input type="text" placeholder="Teléfono" required (click)="resetValidations()" formControlName="phone"
+                  minlength="10" maxlength="10" oninput="(value=value.replace(/\D+/g, ''))" />
+              </div>
+              <p class="form-error" [@enterAnimation]
+                *ngIf="(form.get('phone')?.errors && form.get('phone')?.touched) || (invalid && form.get('phone')?.untouched)">
+                {{errorMessage('phone')}}
+              </p>
+            </div>
+            <div class="form-field"
+              [ngClass]="{'margin-error' : (form.get('email')?.errors && form.get('email')?.touched) || (invalid && form.get('email')?.untouched)}">
+              <input type="text" placeholder="Email" required (click)="resetValidations()" formControlName="email" />
+              <p class="form-error" [@enterAnimation]
+                *ngIf="(form.get('email')?.hasError('required') && form.get('email')?.touched) || (invalid && form.get('email')?.untouched)">
+                * Requerido
+              </p>
+              <p class="form-error" [@enterAnimation]
+                *ngIf="form.get('email')?.hasError('pattern') && form.get('email')?.touched">
+                {{errorMessage('email')}}
+              </p>
+            </div>
+            <div class="form-field">
+              <textarea placeholder="Mensaje" formControlName="message"></textarea>
+            </div>
+          </div>
+          <input type="hidden" formControlName="utm_source"/>
+          <input type="hidden" formControlName="utm_medium"/>
+          <input type="hidden" formControlName="utm_campaign"/>
+          <input type="hidden" formControlName="adset"/>
+          <input type="hidden" formControlName="utm_content"/>
+          <input type="hidden" formControlName="utm_term"/>
+          <input type="hidden" formControlName="gclid"/>
+          <input type="hidden" formControlName="wbraid"/>
+          <input type="hidden" formControlName="gbraid"/>
+          <input type="hidden" formControlName="device"/>
+          <input type="hidden" formControlName="url">
+
+          <!-- {{form.value | json}} -->
+          <div class="button">
+            <button *ngIf="!isPageBlueMoon" mat-button class="btn-primary">Contacta un Asesor</button>
+            <button *ngIf="isPageBlueMoon" mat-button class="btn-blue">Contacta un Asesor</button>
+            <p class="error-captcha" [@enterAnimation] *ngIf="invalidCaptcha">{{this.invalidCaptcha}}</p>
+          </div>
+        </form>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="m-section addres-info" [ngClass]="{'blue-moon': isPageBlueMoon}">
+  <div class="image">
+    <img *ngIf="!isPageBlueMoon" src="/assets/images/map.png" alt="">
+    <img *ngIf="isPageBlueMoon" src="/assets/images/map-blue.png" alt="">
+  </div>
+  <div class="container">
+    <div class="content-address">
+      <div class="address">
+        <div class="left" [ngClass]="{'blue-moon': isPageBlueMoon}">
+          <div class="column">
+            <div class="name">
+              <p>Horario</p>
+            </div>
+            <div class="info">
+              <p>Lunes a Viernes</p>
+              <p>9am - 6pm</p>
+            </div>
+            <div class="info">
+              <p>Sábado</p>
+              <p>9am - 2pm</p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="name">
+              <p>Teléfono</p>
+            </div>
+            <div class="info">
+              <a href="tel: +529984270404">+52 998 427 0404</a>
+              <!-- <a href="tel: +529981234567">+52 998 123 4567</a> -->
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="name">
+              <p>Dirección</p>
+            </div>
+            <div class="info">
+              <p>Master Plaza local 57-A, Planta alta</p>
+              <p>Supermanzana 327 Manzana 38 Lote 57-01</p>
+              <p>Cancún, México</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="right" [ngClass]="{'blue-moon': isPageBlueMoon}">
+
+          <div class="column">
+            <div class="name">
+              <p>Email</p>
+            </div>
+            <div class="info">
+              <a href="mailto: contacto@cccgroup.mx">contacto@cccgroup.mx</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="name">
+              <p>Whatsapp</p>
+            </div>
+            <div class="info">
+              <a href="https://wa.me/+529983295355" target="_blank">+52 998 329 5355</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="name">
+              <p>Síguenos</p>
+            </div>
+            <div class="redes">
+              <a target="_blank" href="https://www.instagram.com/cccgroupinco/"><img src="/assets/images/icons/instagram-white.png" alt=""></a>
+              <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/twitter-white.png" alt=""></a> -->
+              <!-- <a href="javascript:void(0)"><img src="/assets/images/icons/youtube-white.png" alt=""></a> -->
+              <a target="_blank" href="https://www.facebook.com/lunaazulresidencial"><img src="/assets/images/icons/facebook-white.png" alt=""></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>

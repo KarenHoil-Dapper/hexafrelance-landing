@@ -1,0 +1,42 @@
+<section class="m-section first">
+  <div class="container">
+    <div class="content">
+      <div class="title">
+        <p class="title-section">¿Qué hacemos y cómo lo hacemos?</p>
+      </div>
+      <div class="cards">
+        <div class="card" *ngFor="let info of infoCards">
+          <div class="top">
+            <div class="name">
+              <p>{{info.title}}</p>
+            </div>
+            <div class="info">
+              <p>{{info.info}}</p>
+            </div>
+          </div>
+          <div class="image">
+            <img [src]="info.image" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="m-section">
+  <div class="container">
+    <div class="second-content">
+      <div class="title">
+        <p>Cada miembro de nuestro equipo aporta años de experiencia en diferentes áreas de la industria inmobiliaria,
+          como desarrollo de proyectos, financiamiento, marketing y atención al cliente. Nos enorgullece contar con
+          profesionales altamente capacitados y comprometidos con brindar el mejor producto y servicio a nuestros
+          clientes.</p>
+      </div>
+      <div class="button">
+        <button class="btn-primary" (click)="goTo('contact', $event)" mat-button>Contacta a un asesor</button>
+      </div>
+    </div>
+  </div>
+</section>

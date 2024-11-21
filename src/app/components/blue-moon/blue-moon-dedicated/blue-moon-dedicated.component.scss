@@ -1,0 +1,76 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  width: 100%;
+  @media (min-width: 991px) {
+    gap: 53px;
+  }
+  .top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+    @media (min-width: 991px) {
+      gap: 100px;
+      flex-direction: row;
+    }
+    .column {
+      width: 100%;
+      @media (min-width: 991px) {
+        max-width: 542px;
+      }
+      p {
+        color: #72644a;
+        font-family: "Mazius";
+        font-weight: 400;
+        font-size: 32px;
+        @media (min-width: 575px) {
+          font-size: 40px;
+        }
+      }
+    }
+    .column-info {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      width: 100%;
+      @media (min-width: 575px) {
+        gap: 27px;
+      }
+      @media (min-width: 991px) {
+        max-width: 480px;
+      }
+      p {
+        color: #5a5a5a;
+        font-family: 'Inter';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      button {
+        height: 48px;
+        padding: 10px 32px;
+        width: 100%;
+        @media (min-width: 575px) {
+          width: fit-content;
+        }
+      }
+    }
+  }
+  .swiper{
+    width: 100%;
+    padding-bottom: 36px;
+    .content-swiper{
+      width: 100%;
+      margin: 0 auto;
+      .image{
+        img{
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div class="space"></div>
+<section class="m-section">
+  <div class="container">
+    <div class="content" [ngClass]="info.class">
+      <div class="information">
+        <div class="title">
+          <p class="title-banner">{{info.title}}</p>
+        </div>
+        <div class="info" [ngClass]="info.class">
+          <p>{{info.info}}</p>
+        </div>
+        <div class="button">
+          <button routerLink="/lunaazulresidencial" (click)="goTo('nav', $event)" mat-button class="btn-primary">{{info.button}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

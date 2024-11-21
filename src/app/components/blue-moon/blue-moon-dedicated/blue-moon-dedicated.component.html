@@ -1,0 +1,32 @@
+<section class="m-section" id="ubicacion">
+  <div class="container">
+    <div class="content">
+      <div class="top">
+        <div class="column">
+          <p>Luna Azul Residencial se dedica a la comercialización de lotes residenciales exclusivos.</p>
+        </div>
+        <div class="column-info">
+          <p>Estos terrenos están meticulosamente diseñados para que los propietarios materialicen sus sueños
+            construyendo hogares que se adapten a sus preferencias y necesidades.</p>
+          <button (click)="goTo('contact', $event)" class="btn-blue">contacta un asesor</button>
+        </div>
+      </div>
+      <div class="swiper">
+
+        <swiper [config]="swiperConfig" [navigation]="false" [centeredSlides]="true" [autoplay]="true" [loop]="true"
+        class="swiper-blue" [pagination]="{clickable: true}">
+        <ng-template swiperSlide *ngFor="let info of infoCards">
+
+          <div class="content-swiper">
+           <div class="image">
+            <img [src]="info" alt="">
+           </div>
+          </div>
+
+        </ng-template>
+      </swiper>
+
+      </div>
+    </div>
+  </div>
+</section>

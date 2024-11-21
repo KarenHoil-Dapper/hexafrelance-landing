@@ -1,0 +1,64 @@
+.content {
+  display: flex;
+  width: 100%;
+  gap: 56px;
+  flex-direction: column;
+  @media (min-width: 991px) {
+    align-items: center;
+    flex-direction: row;
+    gap: 110px;
+  }
+  @media (min-width: 1200px) {
+    gap: 278px;
+  }
+  .images {
+    width: 422px;
+    overflow: visible;
+    max-width: 80%;
+    @media (min-width: 991px) {
+      max-width: 100%;
+    }
+    .image {
+      position: relative;
+      .img {
+        position: absolute;
+        border-radius: 16px;
+        border: 8px solid #fff;
+        right: -25%;
+        bottom: 10%;
+        @media (min-width: 991px) {
+          bottom: 52px;
+          right: -52px;
+        }
+        @media (min-width: 1200px) {
+          right: -135px;
+        }
+        img {
+          max-width: 165px;
+          margin-bottom: -4px;
+          @media (min-width: 575px) {
+            max-width: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    .title{
+      p{
+        color: var(--secondary);
+      }
+    }
+    @media (min-width: 991px) {
+      max-width: 454px;
+    }
+    .button {
+      padding-top: 8px;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 32px;
+  @media (min-width: 992px) {
+    background: linear-gradient(0deg, #eaebee 0%, rgba(248, 249, 251, 0) 63%);
+  }
+  .image {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    @media (min-width: 992px) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(0%, -50%);
+    }
+    img {
+      width: 100%;
+      max-width: 92%;
+      @media (min-width: 992px) {
+        max-width: 450px;
+      }
+      @media (min-width: 1200px) {
+        max-width: 600px;
+      }
+      @media (min-width: 1440px) {
+        max-width: 712px;
+      }
+    }
+  }
+}
+.container {
+  width: 100%;
+  .content {
+    @media (min-width: 992px) {
+      padding: 30px 0px;
+    }
+    @media (min-width: 1200px) {
+      padding: 75px 0px;
+    }
+    .information {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 100%;
+      @media (min-width: 992px) {
+        max-width: 496px;
+      }
+      .subtitle {
+        p {
+          color: var(--tertiary);
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+      .texto {
+        p {
+          color: #6a6a6a;
+          font-family: "Nunito";
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 110.687%;
+        }
+      }
+      .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        .btn-primary {
+          background-color: var(--tertiary);
+          font-family: "Nunito";
+          font-size: 14px;
+          letter-spacing: 0.14px;
+        }
+        .btn-secondary {
+          width: fit-content;
+          color: #34948a;
+          font-family: "Nunito";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500 !important;
+          line-height: 129.9%; /* 18.186px */
+          letter-spacing: 0.14px;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
+.space {
+  height: 100px;
+}

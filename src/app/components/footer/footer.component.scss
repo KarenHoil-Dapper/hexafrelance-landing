@@ -1,0 +1,141 @@
+section {
+  padding: 32px 0px;
+  &.blue-moon {
+    background-color: #264561;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    @media (min-width: 768px) {
+      gap: 44px;
+    }
+    .top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 24px;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      .logo {
+        width: 100%;
+        max-width: 42px;
+        img {
+          min-width: 30px;
+        }
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        max-width: 100%;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+          gap: 56px;
+        }
+        a {
+          color: var(--primary);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &.active,
+          &:hover {
+            color: var(--secondary);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .info-contact {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      justify-content: start;
+      align-items: start;
+      // flex-wrap: wrap;
+      a {
+        color: var(--primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110.687%;
+        white-space: nowrap;
+      }
+    }
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      justify-content: space-between;
+      .address {
+        max-width: 87%;
+        p {
+          color: var(--primary);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 110.687%;
+        }
+      }
+      .social {
+        display: none;
+        @media (min-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+        p {
+          color: #1d5143;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 129.9%;
+          letter-spacing: 0.14px;
+        }
+        .redes {
+          display: flex;
+          align-items: center;
+          gap: 17px;
+        }
+      }
+    }
+
+    &.blue-moon {
+      .top {
+        .links {
+          a {
+            color: #fff;
+          }
+        }
+      }
+      .info-contact {
+        a {
+          color: #fff;
+        }
+        .email {
+          color: #e9dab4;
+        }
+      }
+      .bottom {
+        .address {
+          p {
+            color: #fff;
+          }
+        }
+        .social {
+          p {
+            color: #E9DAB4;
+          }
+        }
+      }
+    }
+  }
+}

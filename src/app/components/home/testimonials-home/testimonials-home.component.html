@@ -1,0 +1,67 @@
+<section class="m-section one">
+  <div class="container">
+    <div class="content">
+      <div class="back"></div>
+      <div class="left">
+        <div class="subtitle">
+          <p>Testimoniales</p>
+        </div>
+        <div class="title">
+          <p class="title-section">Lo que nuestros clientes opinan</p>
+        </div>
+        <div class="info">
+          <p class="text">Descubre lo que nuestros cliente tienen que decir de su experiencia en CCC Group. Sus historias son nuestro mejor respaldo.</p>
+        </div>
+        <div class="button">
+          <button routerLink="/lunaazulresidencial" (click)="goTo('nav', $event)" mat-button class="btn-primary">Conoce Luna azul</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="cards">
+          <div class="card" *ngFor="let info of infoTestimonials">
+            <div class="stars">
+              <ng-template #t let-fill="fill">
+                <span class="star" [class.full]="fill === 100">
+                  <span class="half" [style.width.%]="fill"><mat-icon class="mat-18">star</mat-icon></span><mat-icon
+                    class="mat-18">star</mat-icon>
+                </span>
+              </ng-template>
+              <ngb-rating [(rate)]="info.star" [starTemplate]="t" [readonly]="true" [max]="5"></ngb-rating>
+            </div>
+            <div class="info">
+              <p>{{info.info}}</p>
+            </div>
+            <div class="name">
+              <p>{{info.name}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="second m-section">
+  <div class="container">
+    <div class="content">
+      <div class="images">
+        <div class="image1">
+          <img src="/assets/images/home/testi1.webp" alt="">
+        </div>
+        <div class="image2">
+          <img src="/assets/images/home/testi2.webp" alt="">
+        </div>
+      </div>
+      <div class="information">
+        <div class="title">
+          <p class="title-section">Miles de Historias que contar con nosotros</p>
+        </div>
+        <div class="button">
+          <button class="btn-primary" mat-button routerLink="/lunaazulresidencial" (click)="goTo('nav', $event)">Conoce Nuestros
+            Desarrollos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

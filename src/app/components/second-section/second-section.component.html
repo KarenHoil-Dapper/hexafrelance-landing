@@ -1,0 +1,29 @@
+<section class="m-section">
+  <div class="container">
+    <div class="content" [ngClass]="{'gap': info.image2}">
+      <div class="images">
+        <div class="image">
+          <img [src]="info.image1" alt="">
+          <div class="img" *ngIf="info.image2">
+            <img [src]="info.image2" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div class="subtitle">
+          <p class="text">{{info.subtitle}}</p>
+        </div>
+        <div class="title">
+          <p class="title-section">{{info.title}}</p>
+        </div>
+        <div class="info">
+          <p class="text">{{info.info}}</p>
+          <p *ngIf="info.info2" class="text">{{info.info2}}</p>
+        </div>
+        <div class="button">
+          <button routerLink="/lunaazulresidencial" (click)="goTo('nav', $event)" class="btn-primary" mat-button>{{info.button}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ccc-group": {
+      "hosting": {
+        "ccc-group-front": [
+          "ccc-group"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ccc-group"
+  }
+}

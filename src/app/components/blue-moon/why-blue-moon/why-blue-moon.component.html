@@ -1,0 +1,35 @@
+<section class="m-section" id="valor">
+  <section class="padd">
+    <div class="container">
+      <div class="content">
+        <div class="top">
+          <p>Razones por las que Luna Azul Residencial está mejor ubicado que la competencia:</p>
+        </div>
+        <div class="bottom">
+          <div class="images">
+            <div class="image">
+              <img src="/assets/images/blue/why/slider.webp" alt="">
+              <div class="back"></div>
+            </div>
+          </div>
+          <div class="swiper">
+            <swiper [config]="swiperConfig" [navigation]="false" [centeredSlides]="false" [autoplay]="true"
+              [loop]="true" class="swiper-investment" [pagination]="{clickable: true}">
+              <ng-template swiperSlide *ngFor="let info of infoCards">
+                <div class="content-swiper">
+                  <div class="icon">
+                    <img [src]="info.icon" alt="">
+                  </div>
+                  <div class="info">
+                    <p class="title">{{info.title}}</p>
+                    <p class="text">{{info.info}}</p>
+                  </div>
+                </div>
+              </ng-template>
+            </swiper>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
