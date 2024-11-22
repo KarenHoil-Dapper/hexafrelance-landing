@@ -1,5 +1,5 @@
 {
-  "name": "ccc-group-front",
+  "name": "hexafrelancer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,10 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run ccc-group-front:serve-ssr",
-    "serve:ssr": "node dist/ccc-group-front/server/main.js",
-    "build:ssr": "ng build && ng run ccc-group-front:server",
-    "prerender": "ng run ccc-group-front:prerender"
+    "dev:ssr": "ng run hexafrelancer:serve-ssr",
+    "serve:ssr": "node dist/hexafrelancer/server/main.js",
+    "build:ssr": "ng build && ng run hexafrelancer:server",
+    "prerender": "ng run hexafrelancer:prerender"
   },
   "private": true,
   "dependencies": {
@@ -30,9 +30,6 @@
     "@ng-bootstrap/ng-bootstrap": "4.1.0",
     "@nguniversal/express-engine": "^14.2.3",
     "express": "^4.15.2",
-    "ng-recaptcha": "^12.0.2",
-    "ngx-cookie-service": "^17.1.0",
-    "ngx-toastr": "^14.0.0",
     "rxjs": "~7.5.0",
     "sweetalert2": "^11.7.12",
     "swiper": "8.0.6",

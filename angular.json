@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ccc-group-front": {
+    "hexafrelancer": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ccc-group-front/browser",
+            "outputPath": "dist/hexafrelancer/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ccc-group-front:build:production"
+              "browserTarget": "hexafrelancer:build:production"
             },
             "development": {
-              "browserTarget": "ccc-group-front:build:development"
+              "browserTarget": "hexafrelancer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ccc-group-front:build"
+            "browserTarget": "hexafrelancer:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/ccc-group-front/server",
+            "outputPath": "dist/hexafrelancer/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -133,12 +133,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "ccc-group-front:build:development",
-              "serverTarget": "ccc-group-front:server:development"
+              "browserTarget": "hexafrelancer:build:development",
+              "serverTarget": "hexafrelancer:server:development"
             },
             "production": {
-              "browserTarget": "ccc-group-front:build:production",
-              "serverTarget": "ccc-group-front:server:production"
+              "browserTarget": "hexafrelancer:build:production",
+              "serverTarget": "hexafrelancer:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -152,12 +152,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "ccc-group-front:build:production",
-              "serverTarget": "ccc-group-front:server:production"
+              "browserTarget": "hexafrelancer:build:production",
+              "serverTarget": "hexafrelancer:server:production"
             },
             "development": {
-              "browserTarget": "ccc-group-front:build:development",
-              "serverTarget": "ccc-group-front:server:development"
+              "browserTarget": "hexafrelancer:build:development",
+              "serverTarget": "hexafrelancer:server:development"
             }
           },
           "defaultConfiguration": "production"
@@ -167,11 +167,11 @@
           "options": {
             "prerender": false,
             "ssr": false,
-            "browserTarget": "ccc-group-front:build:production",
+            "browserTarget": "hexafrelancer:build:production",
             "firebaseProject": "ccc-group",
             "firebaseHostingSite": "ccc-group",
-            "serverTarget": "ccc-group-front:server:production",
-            "prerenderTarget": "ccc-group-front:prerender:production"
+            "serverTarget": "hexafrelancer:server:production",
+            "prerenderTarget": "hexafrelancer:prerender:production"
           }
         }
       }

@@ -2,7 +2,7 @@
   "targets": {
     "ccc-group": {
       "hosting": {
-        "ccc-group-front": [
+        "hexafrelancer": [
           "ccc-group"
         ]
       }

@@ -5,10 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { SwiperModule } from 'swiper/angular';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { RECAPTCHA_V3_SITE_KEY, RecaptchaV3Module, ReCaptchaV3Service } from 'ng-recaptcha';
-import { UrlLocalStorageService } from './url-local-storage.service';
-import { CookieService } from 'ngx-cookie-service';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -32,8 +28,6 @@ import { BlueMoonDedicatedComponent } from './components/blue-moon/blue-moon-ded
 import { CharacteristicsBlueComponent } from './components/blue-moon/characteristics-blue/characteristics-blue.component';
 import { TestimonialsHomeComponent } from './components/home/testimonials-home/testimonials-home.component';
 import { BannersComponent } from './components/banners/banners.component';
-
-import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -72,15 +66,7 @@ import { ToastrModule } from 'ngx-toastr';
     MaterialModule,
     SwiperModule,
   ],
-  providers: [
-    UrlLocalStorageService,
-    CookieService,
-    ReCaptchaV3Service,
-    {
-      provide: RECAPTCHA_V3_SITE_KEY,
-      useValue: "6LeVflopAAAAAPNJxOVFyWUfoyw6tXBoV93hynRN",
-    },
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

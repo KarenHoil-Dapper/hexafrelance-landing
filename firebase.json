@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "target": "ccc-group-front",
-    "public": "dist/ccc-group-front/browser",
+    "target": "hexafrelancer",
+    "public": "dist/hexafrelancer/browser",
     "ignore": [
       "**/.*"
     ],
