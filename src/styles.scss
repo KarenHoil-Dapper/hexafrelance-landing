@@ -4,7 +4,6 @@
 @import "swiper/scss/navigation";
 @import "swiper/scss/pagination";
 @import "swiper/scss/effect-fade";
-@import "ngx-toastr/toastr";
 
 :root {
   --primary: #20776e;
@@ -378,69 +377,4 @@ h5 {
 .grecaptcha-badge {
   z-index: 20;
   bottom: 85px !important;
-}
-
-// FORMULARIO Y TOASTR
-.toast-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.toast-custom-success {
-  border-radius: 4px !important;
-  font-size: 1em !important;
-  padding: 0.8em 1.5em !important;
-  width: 30% !important;
-  margin-bottom: 0.5em;
-  text-align: center !important;
-  color: #fff !important;
-  background-color: #51a351 !important;
-}
-
-.toast-custom-error {
-  border-radius: 4px !important;
-  font-size: 1em !important;
-  padding: 0.8em 1.5em !important;
-  width: 30% !important;
-  margin-bottom: 0.5em;
-  text-align: center !important;
-  color: #fff !important;
-  background-color: #dc3545 !important;
-}
-
-.toast-custom-warning {
-  border-radius: 4px !important;
-  font-size: 1em !important;
-  padding: 0.8em 1.5em !important;
-  width: 30% !important;
-  margin-bottom: 0.5em;
-  text-align: center !important;
-  color: #fff !important;
-  background-color: #ffc107 !important;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .toast-custom-success {
-    width: 70% !important;
-  }
-
-  .toast-custom-error {
-    width: 70% !important;
-  }
-  .toast-custom-warning {
-    width: 70% !important;
-  }
-}
-@media (max-width: 767px) {
-  .toast-custom-success {
-    width: 70% !important;
-  }
-
-  .toast-custom-error {
-    width: 70% !important;
-  }
-  .toast-custom-warning {
-    width: 70% !important;
-  }
 }
