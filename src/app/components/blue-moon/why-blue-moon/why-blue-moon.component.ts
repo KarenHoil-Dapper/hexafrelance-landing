@@ -52,39 +52,25 @@ export class WhyBlueMoonComponent implements OnInit {
   public infoCards = [
     {
       icon: '/assets/images/blue/why/amenidades.webp',
-      title: 'Amenidades',
-      info: 'Más de 20 amenidades y espacios de recreación familiar.',
+      title: 'Plataforma de confianza',
+      info: 'Ofrecemos un espacio seguro donde freelancers y clientes pueden interactuar de manera transparente y profesional',
     },
     {
       icon: '/assets/images/blue/why/ubi.webp',
-      title: 'Ubicación',
-      info: 'Urbanización con una planeación estratégica y de alto nivel residencial sustentable.',
+      title: 'Sistema de calificación y comentarios',
+      info: 'Permitimos que los usuarios califiquen proyectos y proporcionen retroalimentación, lo que asegura la calidad y mejora continua',
     },
     {
       icon: '/assets/images/blue/why/mes.webp',
-      title: 'mensualidades',
-      info: 'Facilidades de pagos y planes a MSI.',
+      title: 'Innovación constante',
+      info: 'Nos mantenemos a la vanguardia de las últimas tendencias y tecnologías para ofrecer soluciones actualizadas y eficaces',
     },
     {
       icon: '/assets/images/blue/why/juridica.webp',
-      title: 'Certeza Jurídica',
-      info: 'Trabajamos con los mejores profesionales legales para garantizar que tu inversión esté protegida.',
+      title: 'Comunidad activa y colaborativa',
+      info: 'Fomentamos una red de profesionales dispuestos a compartir conocimientos, experiencias y buenas prácticas, fortaleciendo el ecosistema freelance',
     },
-    {
-      icon: '/assets/images/blue/why/linea.png',
-      title: 'Aparta en Línea',
-      info: 'Con nuestro sistema de apartado en línea, puedes asegurar tu propiedad desde la comodidad de tu hogar.',
-    },
-    {
-      icon: '/assets/images/blue/why/financiera.png',
-      title: 'Seguridad Financiera',
-      info: 'Te ofrecemos opciones de financiamiento seguras y flexibles.',
-    },
-    {
-      icon: '/assets/images/blue/why/referidos.png',
-      title: 'Programa de Referidos',
-      info: 'Únete a nuestro programa de referidos y comparte las oportunidades inigualables que ofrecemos.',
-    },
+
   ];
 
 }
