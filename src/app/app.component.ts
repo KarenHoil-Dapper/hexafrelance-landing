@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   title = 'hexafrelancer';
 
   public url: string = '';
-  public link: string = 'https://wa.me/+529983295355?text=Hola,%20quisiera%20saber%20más%20sobre%20Luna%20Azul%20Residencial';
+  public link: string = 'https://wa.me/+5219984131699?text=Hola,%20quisiera%20saber%20más%20sobre%20Luna%20Azul%20Residencial';
   public isPageBlueMoon: boolean = false;
 
   constructor(

@@ -2,8 +2,8 @@
   <div class="top-nav" [ngClass]="{'blue-moon': isPageBlueMoon, 'scroll': scrollFlag}">
     <div class="as" [ngClass]="{'blue-moon': isPageBlueMoon}">
       <a class="ccc" routerLink="/inicio" (click)="goTo('nav', $event)" href="javascript:void(0)">HEXAFRELANCER</a>
-      <a class="email" href="mailto: contacto@hexafrelance.mx">contacto@hexafrelance.mx</a>
-      <a class="tel" href="tel: +529984270404">Tel. +52 998 427 0404 </a>
+      <a class="email" href="mailto: contacto@hexafrelance.mx">{{'contacto@hexafrelance.mx'}}</a>
+      <a class="tel" href="tel: +529984270404">Tel. +52 1 998 413 1699</a>
       <a *ngIf="!isPageBlueMoon" class="whats" href="https://wa.me/+529983295355" target="_blank"> <img
           src="/assets/images/icons/whatsapp.png" alt=""> WhatsApp</a>
       <a *ngIf="isPageBlueMoon" class="whats" href="https://wa.me/+529983295355" target="_blank"> <img
@@ -40,10 +40,10 @@
           </a>
         </div>
         <div class="button" [ngClass]="{'blue-moon': isPageBlueMoon}">
-          <a target="_blank" href="https://wa.me/+529983295355" *ngIf="!isPageBlueMoon" class="btn-primary">
+          <a target="_blank" href="https://wa.me/+5219984131699" *ngIf="!isPageBlueMoon" class="btn-primary">
             <img src="/assets/images/icons/whatsapp.png" alt="">WhatsApp
           </a>
-          <a target="_blank" href="https://wa.me/+529983295355" *ngIf="isPageBlueMoon" class="btn-primary">
+          <a target="_blank" href="https://wa.me/+5219984131699" *ngIf="isPageBlueMoon" class="btn-primary">
             <img src="/assets/images/icons/whats-blue.png" alt="">WhatsApp
           </a>
         </div>
@@ -81,7 +81,7 @@
           <a href="tel: +529984270404">Tel. +52 998 427 0404</a>
           <!-- <a href="tel: +529981234567">+52 998 123 4567</a> -->
           <a href="https://wa.me/+529983295355" target="_blank">WhatsApp +52 998 329 5355</a>
-          <a href="mailto: contacto@hexafrelance.mx">contacto@hexafrelance.mx</a>
+          <a href="mailto: contacto@hexafrelance.mx">{{'contacto@hexafrelance.mx'}}</a>
         </div>
         <div class="socials">
           <p class="text">Síguenos</p>
