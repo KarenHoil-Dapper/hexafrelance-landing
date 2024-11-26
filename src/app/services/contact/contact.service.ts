@@ -8,10 +8,24 @@ import { firstValueFrom, lastValueFrom } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactService {
-  // private sendContactURl:string = `${environment.URL_API}/mail/contact/ccc-group`
-  constructor(private http:HttpClient) {
+
+
+  private baseUrl: string = `${environment.URL_API}`
+
+  constructor(private http: HttpClient) {
+  }
+
+  async getAllProyects() {
+    try {
+      const response = await firstValueFrom(this.http.get<DefaultResponse>(this.baseUrl + '/projects'));
+      console.log(response);
+      return response;
+    } catch (error) {
+      console.log(error);
+      return [];
+    }
   }
 
 
-  
+
 }
