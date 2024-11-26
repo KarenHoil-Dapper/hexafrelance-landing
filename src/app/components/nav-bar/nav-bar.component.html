@@ -4,9 +4,9 @@
       <a class="ccc" routerLink="/inicio" (click)="goTo('nav', $event)" href="javascript:void(0)">HEXAFRELANCER</a>
       <a class="email" href="mailto: contacto@hexafrelance.mx">{{'contacto@hexafrelance.mx'}}</a>
       <a class="tel" href="tel: +529984270404">Tel. +52 1 998 413 1699</a>
-      <a *ngIf="!isPageBlueMoon" class="whats" href="https://wa.me/+529983295355" target="_blank"> <img
+      <a *ngIf="!isPageBlueMoon" class="whats" href="https://wa.me/+9981434343" target="_blank"> <img
           src="/assets/images/icons/whatsapp.png" alt=""> WhatsApp</a>
-      <a *ngIf="isPageBlueMoon" class="whats" href="https://wa.me/+529983295355" target="_blank"> <img
+      <a *ngIf="isPageBlueMoon" class="whats" href="https://wa.me/+9981434343" target="_blank"> <img
           src="/assets/images/icons/whats-blue.png" alt=""> WhatsApp</a>
     </div>
   </div>
@@ -63,24 +63,24 @@
           <mat-icon (click)=" menu = !menu" class="mat-18">close</mat-icon>
         </div>
         <div class="logo">
-          <img src="/assets/images/logo.png" alt="">
+          <img width="100" src="/assets/images/logo-blue.png" alt="">
         </div>
       </div>
       <div class="link">
-        <a *ngFor="let route of routers" href="javascript:void(0)" routerLinkActive="active"
+        <a *ngFor="let route of routersBlue" href="javascript:void(0)" routerLinkActive="active"
           (click)="goTo('nav', $event); menu = !menu" [routerLink]="route.route">{{route.name}}
         </a>
       </div>
       <div class="buttons">
         <div class="whats">
-          <a href="https://wa.me/+529983295355" target="_blank" >
+          <a href="https://wa.me/+9981434343" target="_blank" >
             <img src="/assets/images/icons/whatsapp.png" alt="">WhatsApp
           </a>
         </div>
         <div class="contact">
           <a href="tel: +529984270404">Tel. +52 998 427 0404</a>
           <!-- <a href="tel: +529981234567">+52 998 123 4567</a> -->
-          <a href="https://wa.me/+529983295355" target="_blank">WhatsApp +52 998 329 5355</a>
+          <a href="https://wa.me/+9981434343" target="_blank">WhatsApp +52 998 329 5355</a>
           <a href="mailto: contacto@hexafrelance.mx">{{'contacto@hexafrelance.mx'}}</a>
         </div>
         <div class="socials">

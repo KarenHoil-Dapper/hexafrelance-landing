@@ -53,22 +53,22 @@ export class WhyBlueMoonComponent implements OnInit {
     {
       icon: '/assets/images/blue/why/amenidades.webp',
       title: 'Plataforma de confianza',
-      info: 'Ofrecemos un espacio seguro donde freelancers y clientes pueden interactuar de manera transparente y profesional',
+      info: 'Ofrecemos un espacio seguro donde freelancers y clientes pueden interactuar de manera transparente',
     },
     {
       icon: '/assets/images/blue/why/ubi.webp',
-      title: 'Sistema de calificación y comentarios',
-      info: 'Permitimos que los usuarios califiquen proyectos y proporcionen retroalimentación, lo que asegura la calidad y mejora continua',
+      title: 'Sistema de calificación',
+      info: 'Permitimos que los usuarios califiquen proyectos y proporcionen retroalimentación, lo que asegura la calidad',
     },
     {
       icon: '/assets/images/blue/why/mes.webp',
       title: 'Innovación constante',
-      info: 'Nos mantenemos a la vanguardia de las últimas tendencias y tecnologías para ofrecer soluciones actualizadas y eficaces',
+      info: 'Nos mantenemos a la vanguardia de las últimas tendencias y tecnologías para ofrecer soluciones actualizadas',
     },
     {
       icon: '/assets/images/blue/why/juridica.webp',
-      title: 'Comunidad activa y colaborativa',
-      info: 'Fomentamos una red de profesionales dispuestos a compartir conocimientos, experiencias y buenas prácticas, fortaleciendo el ecosistema freelance',
+      title: 'Comunidad activa',
+      info: 'Fomentamos una red de profesionales dispuestos a compartir conocimientos, experiencias y buenas prácticas',
     },
 
   ];

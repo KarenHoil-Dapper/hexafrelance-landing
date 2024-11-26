@@ -47,24 +47,24 @@ export class NavBarComponent implements OnInit {
 
   public routersBlue = [
     {
-      name: 'Razones',
+      name: 'Ultimos proyectos',
       route: 'razones',
     },
     {
-      name: 'Disponibilidad',
+      name: 'Compromiso',
       route: 'disponibilidad',
     },
     {
-      name: 'Valor Agregado',
+      name: 'Razones',
       route: 'valor',
     },
     {
-      name: 'Ubicación',
+      name: 'Plataforma',
       route: 'ubicacion',
     },
     {
-      name: 'Desarrollo',
-      route: 'desarrollo',
+      name: 'Proyectos',
+      route: 'proyectos',
     }
   ]
 
