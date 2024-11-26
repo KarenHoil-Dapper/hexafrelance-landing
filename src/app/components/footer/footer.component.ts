@@ -12,26 +12,27 @@ export class FooterComponent implements OnInit {
 
   public routers = [
     {
-      name: 'Inicio',
-      route: '/inicio',
+      name: 'Ultimos proyectos',
+      route: 'razones',
     },
     {
-      name: 'Desarrollo',
-      route: '/lunaazulresidencial',
+      name: 'Compromiso',
+      route: 'disponibilidad',
     },
     {
-      name: 'Nosotros',
-      route: '/nosotros',
+      name: 'Razones',
+      route: 'valor',
     },
     {
-      name: 'Inversión',
-      route: '/inversion',
+      name: 'Plataforma',
+      route: 'ubicacion',
     },
     {
-      name: 'Contacto',
-      route: '/contacto',
+      name: 'Proyectos',
+      route: 'proyectos',
     }
   ]
+
   public url: string = '';
   public isPageBlueMoon: boolean = false;
 

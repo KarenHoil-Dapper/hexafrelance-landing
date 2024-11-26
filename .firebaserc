@@ -1,14 +1,15 @@
 {
+  "projects": {
+    "default": "hexafrelance-2383d"
+  },
   "targets": {
-    "ccc-group": {
+    "hexafrelance-2383d": {
       "hosting": {
-        "hexafrelancer": [
-          "ccc-group"
+        "front": [
+          "hexafrelance-front"
         ]
       }
     }
   },
-  "projects": {
-    "default": "ccc-group"
-  }
+  "etags": {}
 }
