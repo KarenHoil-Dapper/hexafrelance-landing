@@ -43,7 +43,7 @@ export class FooterComponent implements OnInit {
     this.router.events.subscribe(async (event) => {
       if (event instanceof NavigationEnd) {
         this.url = event.urlAfterRedirects.slice(1);
-        if (this.url.startsWith('desarrollo/') || this.url === 'desarrollo' || this.url === 'lunaazulresidencial') {
+        if (this.url.startsWith('desarrollo/') || this.url === 'desarrollo' || this.url === 'hexafrelance') {
           this.isPageBlueMoon = true;
         } else {
           this.isPageBlueMoon = false;

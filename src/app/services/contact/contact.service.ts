@@ -17,8 +17,7 @@ export class ContactService {
 
   async getAllProyects() {
     try {
-      const response = await firstValueFrom(this.http.get<DefaultResponse>(this.baseUrl + '/projects'));
-      console.log(response);
+      const response = await firstValueFrom(this.http.get<any>(this.baseUrl + '/projects'));
       return response;
     } catch (error) {
       console.log(error);

@@ -13,12 +13,14 @@
       height: 396px;
       padding: 32px 24px;
       background: #264561;
+
       .title {
         display: flex;
         flex-direction: column;
         gap: 16px;
         justify-content: space-between;
         height: 117px;
+
         p {
           color: #f8f9fb;
           font-family: "Mazius";
@@ -28,6 +30,7 @@
           line-height: 118%;
           text-transform: uppercase;
         }
+
         .border {
           width: 102px;
           height: 2px;
@@ -35,7 +38,12 @@
           max-width: 100%;
         }
       }
+
       .information {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
         p {
           color: #f8f9fb;
           font-family: 'Inter';
@@ -43,11 +51,19 @@
           font-style: normal;
           font-weight: 300;
           line-height: 133%;
+
           span {
             font-weight: 700;
           }
         }
+
+        .price,
+        .status  {
+          font-weight: 700;
+          font-size: 20px;
+        }
       }
+
       .button {
         button {
           color: #e4d1ab;

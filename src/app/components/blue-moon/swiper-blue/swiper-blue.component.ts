@@ -1,5 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { ContactService } from 'src/app/services/contact/contact.service';
 
 @Component({
   selector: 'app-swiper-blue',
@@ -7,31 +8,31 @@ import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
   styleUrls: ['./swiper-blue.component.scss'],
 })
 export class SwiperBlueComponent implements OnInit {
-  public infoCards = [
-    {
-      title: 'Sin comprobante de Ingresos ',
-      info: 'Facilitamos tu camino hacia la casa de tus sueños sin complicaciones.',
-      span: '¡Descubre la libertad de ser propietario!',
-      button: 'Quiero Saber Más',
-    },
-    {
-      title: 'Sin revisar buro',
-      info: 'Simplificamos el proceso para que puedas vivir donde mereces. Sin complicaciones, solo posibilidades.',
-      span: '¡Hazlo realidad hoy!',
-      button: 'Quiero Saber Más',
-    },
-    {
-      title: 'Sin Aval',
-      info: 'Eliminamos barreras para que tu sueño de tener casa propia sea real. Sin complicaciones, solo posibilidades.',
-      span: '¡Inicia tu nuevo capítulo hoy!',
-      button: 'Quiero Saber Más',
-    },
-    {
-      title: 'Planes de financiamiento (MSI)',
-      info: 'Hacemos posible tu sueño de tener hogar propio. Comodidad y accesibilidad en cada pago.',
-      span: '¡Inicia tu viaje hacia tu nuevo hogar!',
-      button: 'Quiero Saber Más',
-    },
+  public infoCards: any[] = [
+    // {
+    //   title: 'Sin comprobante de Ingresos ',
+    //   info: 'Facilitamos tu camino hacia la casa de tus sueños sin complicaciones.',
+    //   span: '¡Descubre la libertad de ser propietario!',
+    //   button: 'Quiero Saber Más',
+    // },
+    // {
+    //   title: 'Sin revisar buro',
+    //   info: 'Simplificamos el proceso para que puedas vivir donde mereces. Sin complicaciones, solo posibilidades.',
+    //   span: '¡Hazlo realidad hoy!',
+    //   button: 'Quiero Saber Más',
+    // },
+    // {
+    //   title: 'Sin Aval',
+    //   info: 'Eliminamos barreras para que tu sueño de tener casa propia sea real. Sin complicaciones, solo posibilidades.',
+    //   span: '¡Inicia tu nuevo capítulo hoy!',
+    //   button: 'Quiero Saber Más',
+    // },
+    // {
+    //   title: 'Planes de financiamiento (MSI)',
+    //   info: 'Hacemos posible tu sueño de tener hogar propio. Comodidad y accesibilidad en cada pago.',
+    //   span: '¡Inicia tu viaje hacia tu nuevo hogar!',
+    //   button: 'Quiero Saber Más',
+    // },
   ];
 
 
@@ -46,10 +47,24 @@ export class SwiperBlueComponent implements OnInit {
   }
 
   constructor(
+    private service: ContactService,
     @Inject(PLATFORM_ID) private platformId: any,
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getProyects();
+  }
+
+  async getProyects() {
+    try {
+      let response = await this.service.getAllProyects();
+      console.log(response);
+      this.infoCards = response;
+    } catch (error) {
+      console.log(error);
+
+    }
+  }
 
   swiperConfig: any = {
     allowTouchMove: true,

@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { DevelopmentComponent } from './pages/development/development.component';
 
 const routes: Routes = [
-  { path: 'lunaazulresidencial', component: DevelopmentComponent },
-  { path: 'desarrollo', redirectTo: 'lunaazulresidencial', pathMatch: 'full' },
-  { path: '**', redirectTo: 'lunaazulresidencial', pathMatch: 'full' },
+  { path: 'hexafrelance', component: DevelopmentComponent },
+  { path: 'desarrollo', redirectTo: 'hexafrelance', pathMatch: 'full' },
+  { path: '**', redirectTo: 'hexafrelance', pathMatch: 'full' },
 ];
 
 @NgModule({

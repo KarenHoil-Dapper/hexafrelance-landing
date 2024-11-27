@@ -70,9 +70,11 @@ export class CharacteristicsBlueComponent implements OnInit {
     this.getProyects();
   }
 
-  async getProyects(){
+  async getProyects() {
     try {
       let response = await this.service.getAllProyects();
+      console.log(response);
+      this.proyects = response;
     } catch (error) {
       console.log(error);
 

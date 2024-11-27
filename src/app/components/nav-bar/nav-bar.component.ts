@@ -29,7 +29,7 @@ export class NavBarComponent implements OnInit {
     },
     {
       name: 'Desarrollo',
-      route: '/lunaazulresidencial',
+      route: '/hexafrelance',
     },
     {
       name: 'Nosotros',
@@ -81,7 +81,7 @@ export class NavBarComponent implements OnInit {
       if (event instanceof NavigationEnd) {
         this.url = event.urlAfterRedirects.slice(1);
         //console.log(this.url);
-        if (this.url.startsWith('desarrollo/') || this.url === 'desarrollo' || this.url === 'lunaazulresidencial') {
+        if (this.url.startsWith('desarrollo/') || this.url === 'desarrollo' || this.url === 'hexafrelance') {
           this.isPageBlueMoon = true;
         } else {
           this.isPageBlueMoon = false;

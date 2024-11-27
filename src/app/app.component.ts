@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
         if (
           this.url.startsWith('desarrollo/') ||
           this.url === 'desarrollo' ||
-          this.url === 'lunaazulresidencial'
+          this.url === 'hexafrelance'
         ) {
           this.isPageBlueMoon = true;
         } else {

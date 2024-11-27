@@ -13,10 +13,12 @@
                 <div class="border"></div>
               </div>
               <div class="information">
-                <p>{{info.info}} <br><span>{{info.span}}</span></p>
+                <p class="status">{{info.status}}</p>
+                <p>{{info.description}}</p>
+                <p class="price">{{info.budget | currency}}</p>
               </div>
               <div class="button">
-                <button (click)="goTo('contact', $event)" mat-button class="btn-blue">{{info.button}}</button>
+                <button (click)="goTo('contact', $event)" mat-button class="btn-blue">Contactar</button>
               </div>
             </div>
 
